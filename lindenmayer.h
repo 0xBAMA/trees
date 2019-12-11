@@ -6,6 +6,45 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+/*
+
+	Three vectors represent the turtle:
+
+		heading: initialized to glm::vec3( 0, 1, 0)
+		up:			 initialized to glm::vec3( 0, 0,-1)
+		left:		 initialized to glm::vec3(-1, 0, 0)
+
+	The recognized set of symbols:
+
+		+: 			turn left by some amount, by rotating a negative amount about the up vector
+		-: 			turn right by some amount, by rotating a positive amount about the up vector
+
+		&:			pitch down, by rotating a positive amount about the left vector
+		^:			pitch up, by rotating a negative amount about the left vector
+
+		\:			roll left, by rotating a positive amount about the heading vector
+		/:			roll right, by rotating a negative amount about the heading vector
+
+		|:			turn around, by rotating 180 degrees about the up vector
+
+		[:			push current position, heading, up, and left vectors, as well as any other state variables, onto the stack
+		]:			pop state variables off of the stack
+
+		T:			the line becomes thicker
+		t:			the line becomes thinner
+
+		F:			go forward, along heading
+
+
+
+		think about:
+			step length longer/shorter
+			pen up/pen down
+
+*/
+
+
+
 
 
 
@@ -50,7 +89,6 @@ void lindenmayer::compute_generation()
 
 			case 'b':
 				next_data.push_back('b');
-				next_data.push_back('a');
 				break;
 
 
