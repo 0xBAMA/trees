@@ -14,6 +14,15 @@ using std::endl;
 		up:			 initialized to glm::vec3( 0, 0,-1)
 		left:		 initialized to glm::vec3(-1, 0, 0)
 
+	We maintian state variables for:
+
+		pen up/pen down
+		thickness of the line being drawn
+		location of turtle (translated to keep up with state)
+		orientation of turtle (heading, up, and left, but rotated to keep up with state)
+
+
+
 	The recognized set of symbols:
 
 		+: 			turn left by some amount, by rotating a negative amount about the up vector
@@ -36,9 +45,8 @@ using std::endl;
 		F:			go forward, along heading
 
 
-
 		think about:
-			step length longer/shorter
+			step length longer/shorter	-> this is stupid, just F->FF style rules
 			pen up/pen down
 
 */
