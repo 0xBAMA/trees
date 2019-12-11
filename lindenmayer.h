@@ -45,9 +45,17 @@ void lindenmayer::compute_generation()
 		{
 			case 'a':
 				next_data.push_back('a');
+				next_data.push_back('b');
+				break;
+
+			case 'b':
+				next_data.push_back('b');
 				next_data.push_back('a');
 				break;
 
+
+			default:
+				break;
 		}
 	}
 
