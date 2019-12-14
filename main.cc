@@ -27,6 +27,9 @@ int main(int argc, char const *argv[])
 
 	cout << endl;
 
+	// l1.list_out();
+	l1.interpret();
+
 
 
 

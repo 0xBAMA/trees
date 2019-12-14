@@ -1,6 +1,6 @@
 CC = g++
 
-MAKE_EXE = -o exe -time
+MAKE_EXE = -o exe -time -std=c++11
 
 GL_FLAGS = -lglut -lGLEW -lGL -lGLU
 
